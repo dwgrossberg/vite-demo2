@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import { JSX as _jsx } from "@emotion/react/jsx-runtime";
 
 const home = () => {
   return (

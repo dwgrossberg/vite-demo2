@@ -3,10 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "http://dwgrossberg.github.io",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.3.6",
@@ -21,8 +23,10 @@
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",
+    "gh-pages": "^4.0.0",
     "typescript": "^4.6.4",
     "vite": "^3.1.0",
-    "vite-plugin-favicons-inject": "^2.1.0"
+    "vite-plugin-favicons-inject": "^2.1.0",
+    "vite-plugin-gh-pages": "^0.4.1"
   }
 }

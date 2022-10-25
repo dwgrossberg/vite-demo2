@@ -1,9 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
 
-function App() {
-  return <div className="App">Coming Soon</div>;
-}
+const App = () => {
+  return (
+    <div className="App">
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </HashRouter>
+    </div>
+  );
+};
 
 export default App;
